@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon"  type="image/png"  href="image/clg.png">
+<title>||Online Exam||</title>
+<link  rel="stylesheet" href="css/bootstrap.min.css"/>   
+ <link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/w3.css">
+<style type="text/css">
+  
+#footer {
+  position: fixed;
+
+  z-index: 1;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  bottom: 0px;
+  left: 0px;
+  padding: 5px 5px 5px 5px;
+  right: 0px;
+  margin-bottom: 0px;
+  -webkit-box-shadow: -1px -9px 20px -15px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -9px 20px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: -1px -9px 20px -15px rgb(0, 0, 0);
+}
+
+</style>
+ <script src="js/jquery.js" type="text/javascript"></script>
+
+  <script src="js/bootstrap.min.js"  type="text/javascript"></script>
+ 	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+<div class="header">
+<div class="row">
+<div class="col-lg-6">
+<span class="logo">Online Exam</span></div>
+<div class="col-md-2 col-md-offset-4">
+<a href="#" class="pull-right btn sub1" data-toggle="modal" data-target="#login"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span>&nbsp;<span class="title1"><b>Admin</b></span></a></div>
+
+<div class="modal fade" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content title1">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title title1"><span style="color:#3fb6f0">STUDENT LOGIN</span></h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" action="login.php?q=index.php" method="POST">
+<fieldset>
+
+<div class="form-group">
+  <label class="col-md-3 control-label" for="email"></label>  
+  <div class="col-md-6">
+  <input id="email" name="email" placeholder="Enter your Email-id" class="form-control input-md" type="email">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-3 control-label" for="password"></label>
+  <div class="col-md-6">
+    <input id="password" name="password" placeholder="Enter your Password" class="form-control input-md" type="password">
+  </div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+		</fieldset>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+<div class="modal fade" id="Modal">
+  <div class="modal-dialog">
+    <div class="modal-content title1">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title title1"><span style="color:#3fb6f0">STAFF LOGIN</span></h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal" action="slogin.php?q=index.php" method="POST">
+<fieldset>
+
+<div class="form-group">
+  <label class="col-md-3 control-label" for="email"></label>  
+  <div class="col-md-6">
+  <input id="email" name="email" placeholder="Enter your Email-id" class="form-control input-md" type="email">
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-3 control-label" for="password"></label>
+  <div class="col-md-6">
+    <input id="password" name="password" placeholder="Enter your Password" class="form-control input-md" type="password">
+    
+  </div>
+</div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Login</button>
+    </fieldset>
+</form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+<div class="row footer">
+<div class="col-md-3 box">
+<a href="#" data-toggle="modal" data-target="#Modal">Staff Login</a></div>
+<div class="col-md-3 box">
+<a href="#" data-toggle="modal" data-target="#myModal">Student Login</a></div>
+<div class="col-md-3 box">
+<a href="#" data-toggle="modal" data-target="#developers">Developers</a>
+</div>
+<div class="col-md-3 box">
+<a href="feedback.php">Feedback</a></div></div>
+
+
+
+<div class="modal fade title1" id="developers">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" style="font-family:'typo' "><span style="color:orange">Developers</span></h4>
+      </div>
+	  
+      <div class="modal-body">
+        <p>
+		<div class="row">
+		<div class="col-md-4">
+		 <img src="image/CAM00121.jpg" width=100 height=100 alt="MONISH SHRIVASTAVA" class="img-rounded">
+		 </div>
+		 <div class="col-md-5">
+		<a href="#" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Facebook">Monish Shrivastava</a>
+		<h4 style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+91 9074775130</h4>
+		<h4 style="font-family:'typo' ">monishshrivastava99@gmail.com</h4>
+		<h4 style="font-family:'typo' ">DR. Bhim Rao Ambedkar polytechnic college gwalior</h4></div></div>
+		</p>
+      </div>
+      <div class="modal-body">
+        <p>
+		<div class="row">
+		<div class="col-md-4">
+		 <img src="image/Ashu.jpg" width=100 height=100 alt="Ashutosh Soni" class="img-rounded">
+		 </div>
+		 <div class="col-md-5">
+		<a href="#" style="color:#202020; font-family:'typo' ; font-size:18px" title="Find on Facebook">Ashutosh Soni</a>
+		<h4 style="color:#202020; font-family:'typo' ;font-size:16px" class="title1">+91 9111057961</h4>
+		<h4 style="font-family:'typo' ">iamashuarya786@gmail.com</h4>
+		<h4 style="font-family:'typo' ">Dr. Bhim Rao Ambedkar Polytechnic, Gwalior</h4></div></div>
+		</p>
+      </div>
+    
+    </div>
+  </div>
+</div>
+
+	 <div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title"><span style="color:#3fb6f0;font-family:'typo' ">ADMIN LOGIN</span></h4>
+      </div>
+      <div class="modal-body title1">
+<div class="row">
+<div class="col-md-3"></div>
+<div class="col-md-6">
+<form role="form" method="post" action="admin.php?q=index.php">
+<div class="form-group">
+<input type="text" name="uname" maxlength="20"  placeholder="Admin Login-id" class="form-control"/> 
+</div>
+<div class="form-group">
+<input type="password" name="password" maxlength="15" placeholder="Password" class="form-control"/>
+</div>
+<div class="form-group" align="center">
+<input type="submit" name="login" value="Login" class="btn btn-primary"/>
+<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+</div>
+</form>
+</div><div class="col-md-3"></div></div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+ 
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide"><font size="20px">Online Exam</h2></font>
+    <p class="w3-opacity"><i>_________________</i></p><br>
+    <p class="w3-justify"><font size="4px">We have Created this website to Conduct Online Exams. This website helps you to conduct exams online, and also we have giving you more Features so that you can use it for other purpose, we are providing you Study Materials,Previous Question Papers,and also you can upload any useful material to this website for helping others etc.</font>
+    </p>
+  </div>
+<br><br><br><br>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: white;
+  margin: auto;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 15px;
+  text-align: center;
+}
+
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 0px;
+    background: white;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Add an italic font style to all quotes */
+q {font-style: italic;}
+
+/* Add a blue color to the author */
+.author {color: cornflowerblue;}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+</div>
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";]
+
+}
+</script>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 10%;
+  padding: 0 5px;
+}
+
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.fa {font-size:30px;}
+</style>
+</head>
+<body>
+<h2>Our Achievements</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-user"></i></p>
+      <h3>11+</h3>
+      <p>Faculties</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-check"></i></p>
+      <h3>55+</h3>
+      <p>Test Conducted</p>
+    </div>
+  </div>
+  <center>
+  <div class="column">
+    <div class="card">
+      <p><i class="fa fa-users"></i></p>
+      <h3>100+</h3>
+      <p>Students</p>
+    </div>
+  </div>
+</div>
+
+</center>
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  <center><div class="w3-container">
+  <div class="w3-card-4" style="width:70%;">
+    <header class="w3-container w3-black">
+      <h1>-- Notice --</h1>
+    </header>
+<div class="w3-container">
+      <p>1.-------------------------------------<br>
+         2.-------------------------------------<br>
+         3.-------------------------------------<br>
+    </p>
+    </div>
+</div>
+       <br><br><br><br>
+
+
+ -------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+  <div class="w3-black" id="tour">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">About Us!</h2>
+      <p class="w3-opacity w3-center"><i>--------------------</i></p><br>
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="image/Ashu.jpg" alt="Ashutosh Soni" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Ashutosh Soni</b></p>
+            <p class="w3-opacity">Student Of Dr.BRAPC Gwalior</p>
+            <p>Roll No.:17017C04014
+              <br>Year/Sem:3rd Year/6th Sem
+              <br>Branch : Computer Science</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="image/CAM00121.jpg" alt="Monish Shrivastava" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Monish Shrivastava</b></p>
+            <p class="w3-opacity">Student Of Dr.BRAPC Gwalior</p>
+            <p>Roll No.:17017C04029
+              <br>Year/Sem:3rd Year/6th Sem
+              <br>Branch : Computer Science</p>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="image/clg.png" alt="Dr.BRAPC Gwalior" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>Dr.BRAPC Gwalior</b></p>
+            <p class="w3-opacity">-----------</p>
+            <p>Dr. BhimRao Ambedkar Govt. Polytechnic College,Gwalior (M.P.)474001</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <p class="w3-medium">Project By,<br>Ashutosh Soni<br>Monish Shrivastava</p>
+</footer>
+<div id="footer">
+  <div class="row">
+
+    <div class="form-group" style="text-align: center;">
+      <header role="banner">
+       
+        <div class="logo-main">
+
+          <img src="image\clg.png" width="45" height="45"  style="margin-top: -4px">
+         <h>DR. Bhim Rao Ambedkar Polytechnic College, Gwalior(M.P)
+         </h>
+        </div>
+
+
+      </header>
+    </div>
+
+  </div>
+</div>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: green;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 35px;
+  right: 28px;
+  width: 100px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  border: 5px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 250px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 100px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 5px;
+  border: none;
+  cursor: pointer;
+  width: 30%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<button class="open-button" onclick="openForm()">Chat</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat With Us!</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
